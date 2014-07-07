@@ -27,6 +27,7 @@
 @interface AMSlideTableHeader : UIView
 
 @property (nonatomic, retain) UILabel*	titleLabel;
+@property (nonatomic, retain) UIImageView* titleImageview;
 @property (nonatomic, weak) NSDictionary* options;
 
 @end

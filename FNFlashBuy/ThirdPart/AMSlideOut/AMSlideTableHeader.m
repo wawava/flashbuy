@@ -13,8 +13,10 @@
 
 - (id)init {
     if ((self = [super init])) {
-		self.titleLabel = [[UILabel alloc] init];
-		[self addSubview:_titleLabel];
+//		self.titleLabel = [[UILabel alloc] init];
+//		[self addSubview:_titleLabel];
+        self.titleImageview = [UIImageView new];
+        [self addSubview:_titleImageview];
     }
     return self;
 }
@@ -23,12 +25,15 @@
 {
     [super layoutSubviews];
     
-	self.titleLabel.backgroundColor = [UIColor clearColor];
-	self.titleLabel.font = self.options[AMOptionsHeaderFont];
-	self.titleLabel.textColor = self.options[AMOptionsHeaderFontColor];
-	self.titleLabel.shadowColor = self.options[AMOptionsHeaderShadowColor];
-	self.titleLabel.shadowOffset = CGSizeMake(0, 1);
-    self.titleLabel.frame = CGRectMake([self.options[AMOptionsHeaderPadding] floatValue], 0, [self.options[AMOptionsSlideValue] floatValue] - [self.options[AMOptionsHeaderPadding] floatValue], self.bounds.size.height);
+//	self.titleLabel.backgroundColor = [UIColor clearColor];
+//	self.titleLabel.font = self.options[AMOptionsHeaderFont];
+//	self.titleLabel.textColor = self.options[AMOptionsHeaderFontColor];
+//	self.titleLabel.shadowColor = self.options[AMOptionsHeaderShadowColor];
+//	self.titleLabel.shadowOffset = CGSizeMake(0, 1);
+//    self.titleLabel.frame = CGRectMake([self.options[AMOptionsHeaderPadding] floatValue], 0, [self.options[AMOptionsSlideValue] floatValue] - [self.options[AMOptionsHeaderPadding] floatValue], self.bounds.size.height);
+    UIImage* imageabcd= [UIImage imageNamed:@"profile"];
+    [self .titleImageview setFrame:CGRectMake(0, 0, 270, 135)];
+    [self.titleImageview setImage:imageabcd];
 }
 
 - (void)drawRect:(CGRect)rect

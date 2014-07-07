@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C06E79D196A84CF0021AFC5 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E79C196A84CF0021AFC5 /* profile@2x.png */; };
 		4C07369A1964F2FE000C0F29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0736991964F2FE000C0F29 /* Foundation.framework */; };
 		4C07369C1964F2FE000C0F29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C07369B1964F2FE000C0F29 /* CoreGraphics.framework */; };
 		4C07369E1964F2FE000C0F29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C07369D1964F2FE000C0F29 /* UIKit.framework */; };
@@ -941,6 +942,7 @@
 		4C073F8D1966CB5B000C0F29 /* cell3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F8A1966CB5B000C0F29 /* cell3@2x.png */; };
 		4C073F901966CCA8000C0F29 /* leftnavigation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F8E1966CCA8000C0F29 /* leftnavigation@2x.png */; };
 		4C073F911966CCA8000C0F29 /* select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F8F1966CCA8000C0F29 /* select@2x.png */; };
+		4C81AA53196A68C600BF9557 /* NSObject+IOS7UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C81AA52196A68C600BF9557 /* NSObject+IOS7UI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -954,6 +956,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C06E79C196A84CF0021AFC5 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
 		4C0736961964F2FE000C0F29 /* FNFlashBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNFlashBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0736991964F2FE000C0F29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C07369B1964F2FE000C0F29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1999,6 +2002,8 @@
 		4C073F8A1966CB5B000C0F29 /* cell3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell3@2x.png"; sourceTree = "<group>"; };
 		4C073F8E1966CCA8000C0F29 /* leftnavigation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftnavigation@2x.png"; sourceTree = "<group>"; };
 		4C073F8F1966CCA8000C0F29 /* select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "select@2x.png"; sourceTree = "<group>"; };
+		4C81AA51196A68C600BF9557 /* NSObject+IOS7UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IOS7UI.h"; sourceTree = "<group>"; };
+		4C81AA52196A68C600BF9557 /* NSObject+IOS7UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IOS7UI.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2420,6 +2425,8 @@
 		4C0737CD1964FF47000C0F29 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4C81AA51196A68C600BF9557 /* NSObject+IOS7UI.h */,
+				4C81AA52196A68C600BF9557 /* NSObject+IOS7UI.m */,
 				4C073F681966C1D2000C0F29 /* NSMutableArray+AddOn.h */,
 				4C073F691966C1D2000C0F29 /* NSMutableArray+AddOn.m */,
 				4C073F6A1966C1D2000C0F29 /* NSMutableDictionary+AddOn.h */,
@@ -2599,6 +2606,7 @@
 		4C0739031964FFFD000C0F29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C06E79C196A84CF0021AFC5 /* profile@2x.png */,
 				4C073F8E1966CCA8000C0F29 /* leftnavigation@2x.png */,
 				4C073F8F1966CCA8000C0F29 /* select@2x.png */,
 				4C073F881966CB5B000C0F29 /* cell1@2x.png */,
@@ -4277,6 +4285,7 @@
 				4C073C8119650001000C0F29 /* bg_movie_vouchers_universal.png in Resources */,
 				4C073EC919650001000C0F29 /* logo_share_renren@2x.png in Resources */,
 				4C073DFE19650001000C0F29 /* icon_merchant_collect@2x.png in Resources */,
+				4C06E79D196A84CF0021AFC5 /* profile@2x.png in Resources */,
 				4C073EE719650001000C0F29 /* register_step1_banner@2x.png in Resources */,
 				4C073DB319650001000C0F29 /* icon_filter_priceSeperator.png in Resources */,
 				4C073CF019650001000C0F29 /* btn_filter_select_off.png in Resources */,
@@ -4408,6 +4417,7 @@
 				4C0738DC1964FF47000C0F29 /* FNutil.m in Sources */,
 				4C073F4A19668284000C0F29 /* AMSlideOutGlobals.m in Sources */,
 				4C0737751964FC28000C0F29 /* AFHTTPRequestOperation.m in Sources */,
+				4C81AA53196A68C600BF9557 /* NSObject+IOS7UI.m in Sources */,
 				4C073F7E1966C1D2000C0F29 /* NSObject+BeeNotification.m in Sources */,
 				4C0737A51964FC28000C0F29 /* RDVTabBarController.m in Sources */,
 				4C07379D1964FC28000C0F29 /* UIButton+PPiAwesome.m in Sources */,
@@ -4514,8 +4524,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yiming Dong (Z45HDA65GT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yiming Dong (Z45HDA65GT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: becomedragron cheng (8WMDJ86QFS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: becomedragron cheng (8WMDJ86QFS)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -4554,8 +4564,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yiming Dong (Z45HDA65GT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yiming Dong (Z45HDA65GT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: becomedragron cheng (8WMDJ86QFS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: becomedragron cheng (8WMDJ86QFS)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

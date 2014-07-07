@@ -20,11 +20,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
 	UIViewController* controller;
-	
 	[[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.37 green:0.41f blue:0.48f alpha:1.0f]];
-	
 	self.slideoutController = [AMSlideOutNavigationController slideOutNavigation];
     
 	if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
@@ -39,10 +36,6 @@
 		   AMOptionsAnimationSlidePercentage: @0.7f,
 		   AMOptionsEnableShadow : @YES,
 		   AMOptionsBadgeShowTotal: @YES,
-           // Want inset cell widths? uncomment and set size of gap that goes on both sides
-           //AMOptionsTableInsetX : @(10),
-		   // Want a custom cell? uncomment and use your own class that inherits from AMSlideTableCell
-		   //AMOptionsTableCellClass: @"CustomCell",
 		   AMOptionsHeaderFont : [UIFont systemFontOfSize:14]
 		   }];
 	}
@@ -61,49 +54,68 @@
 		icon2 = @"icon2b.png";
 	}
 	
-	[self.slideoutController addViewControllerToLastSection:controller tagged:1 withTitle:@"First View" andIcon:icon1];
+	[self.slideoutController addViewControllerToLastSection:controller tagged:1 withTitle:@"我的订单" andIcon:icon1];
 	
 	controller = [FNhomeVC new];
-	[self.slideoutController addViewControllerToLastSection:controller tagged:2 withTitle:@"Second View" andIcon:icon2];
+	[self.slideoutController addViewControllerToLastSection:controller tagged:2 withTitle:@"地址修改" andIcon:icon2];
+    
+    controller = [FNhomeVC new];
+	[self.slideoutController addViewControllerToLastSection:controller tagged:3 withTitle:@"关于我们" andIcon:icon2];
+    
+    controller = [FNhomeVC new];
+	[self.slideoutController addViewControllerToLastSection:controller tagged:4 withTitle:@"检查更新" andIcon:icon2];
+    
 	
 	// Add a second section
-	[self.slideoutController addSectionWithTitle:@"SECOND SECTION"];
+//	[self.slideoutController addSectionWithTitle:@"SECOND SECTION"];
     
 	// Add two viewcontrollers to the second section (with lazy initialization)
     
-	[self.slideoutController addViewControllerClassToLastSection:[FirstViewController class]
-                                                     withNibName:@"FirstViewController"
-                                                          tagged:3
-                                                       withTitle:@"First View"
-                                                         andIcon:[UIImage imageNamed:icon1]
-                                                    beforeChange:^{
-                                                        NSLog(@"Changing viewController");
-                                                    } onCompletition:^{
-                                                        NSLog(@"Done");
-                                                    }];
+//	[self.slideoutController addViewControllerClassToLastSection:[FirstViewController class]
+//                                                     withNibName:@"FirstViewController"
+//                                                          tagged:3
+//                                                       withTitle:@"First View"
+//                                                         andIcon:[UIImage imageNamed:icon1]
+//                                                    beforeChange:^{
+//                                                        NSLog(@"Changing viewController");
+//                                                    } onCompletition:^{
+//                                                        NSLog(@"Done");
+//                                                    }];
 	
-//	[self.slideoutController addViewControllerClassToLastSection:[FNhomeVC class] withNibName:@"FNhomeVC" tagged:4 withTitle:@"Second View" andIcon:icon2];
+    //	[self.slideoutController addViewControllerClassToLastSection:[FNhomeVC class] withNibName:@"FNhomeVC" tagged:4 withTitle:@"Second View" andIcon:icon2];
     
 	/* To use a custom header: */
     //	[self.slideoutController addSectionWithTitle:@"" andHeaderClassName:@"CustomHeader" withHeight:5];
+    
 	
-	[self.slideoutController addActionToLastSection:^{} // Some action
-											 tagged:5
-										  withTitle:@"Action"
-											andIcon:@""];
+//	[self.slideoutController addActionToLastSection:^{} // Some action
+//											 tagged:5
+//										  withTitle:@"Action"
+//											andIcon:@""];
 	
 	[self.window setRootViewController:self.slideoutController];
+    
+    /*
+    if ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0) {
+        [application setStatusBarStyle:UIStatusBarStyleLightContent];
+        CGRect frame = self.window.frame;
+        frame.origin.y += 20.0f;
+        frame.size.height -= 20.0f;
+        self.window.frame = frame;
+    }
+     */
+    
     [self.window makeKeyAndVisible];
 	
 	[self.slideoutController setBadgeTotalValue:@"1"];
     
-    //    [TDAPIEngineTest run];
-    
     [FNutil findFonts];
+    
+    //    [TDAPIEngineTest run]；
     
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -112,7 +124,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

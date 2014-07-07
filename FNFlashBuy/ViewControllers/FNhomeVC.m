@@ -9,6 +9,7 @@
 #import "FNhomeVC.h"
 #import "FNProductCell.h"
 #import "UIView+LoadFromNib.h"
+#import "NSObject+IOS7UI.h"
 
 @interface FNhomeVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -74,7 +75,7 @@
 }
 
 #pragma mark - UITableViewDataSource
--(long)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 15;
 }
@@ -93,7 +94,7 @@
     return cell;
 }
 
--(double)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 158/2;
 }
@@ -108,16 +109,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
