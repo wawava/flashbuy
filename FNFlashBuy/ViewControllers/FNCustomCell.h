@@ -8,6 +8,6 @@
 
 #import "AMSlideTableCell.h"
 
-@interface CustomCell : AMSlideTableCell
+@interface FNCustomCell : AMSlideTableCell
 
 @end

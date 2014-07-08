@@ -1,15 +1,14 @@
 //
-//  CustomHeader.m
+//  CustomCell.m
 //  SlideOutSample
 //
-//  Created by Andrea Mazzini on 31/08/13.
+//  Created by Andrea Mazzini on 08/09/13.
 //  Copyright (c) 2013 Andrea Mazzini. All rights reserved.
 //
 
-#import "CustomHeader.h"
-#import "AMSlideOutGlobals.h"
+#import "FNCustomCell.h"
 
-@implementation CustomHeader
+@implementation FNCustomCell
 
 - (void)drawRect:(CGRect)rect
 {
@@ -37,14 +36,14 @@
 	CGGradientRelease(gradient);
 	CGColorSpaceRelease(colorSpace);
 	
-	CGContextSetStrokeColorWithColor(context, ((UIColor*)self.options[AMOptionsHeaderSeparatorUpper]).CGColor);
+	CGContextSetStrokeColorWithColor(context, ((UIColor*)[UIColor lightGrayColor]).CGColor);
     CGContextBeginPath(context);
 	CGContextSetLineWidth(context, 2.0);
     CGContextMoveToPoint(context, 0, 0);
     CGContextAddLineToPoint(context, self.bounds.size.width, 0);
     CGContextStrokePath(context);
 	
-	CGContextSetStrokeColorWithColor(context, ((UIColor*)self.options[AMOptionsHeaderSeparatorLower]).CGColor);
+	CGContextSetStrokeColorWithColor(context, ((UIColor*)[UIColor darkGrayColor]).CGColor);
     CGContextBeginPath(context);
 	CGContextSetLineWidth(context, 2.0);
     CGContextMoveToPoint(context, 0, self.bounds.size.height);

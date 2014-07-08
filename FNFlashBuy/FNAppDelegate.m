@@ -8,6 +8,7 @@
 
 #import "FNAppDelegate.h"
 #import "FNHomeVC.h"
+#import "FNMyOrderVC.h"
 #import "AMSlideOutNavigationController.h"
 
 @implementation FNAppDelegate
@@ -49,10 +50,11 @@
 	if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
 		icon2 = @"icon2b.png";
 	}
+    controller = [FNMyOrderVC new];
 	
 	[self.slideoutController addViewControllerToLastSection:controller tagged:1 withTitle:@"我的订单" andIcon:icon1];
-	
-	controller = [FNhomeVC new];
+
+    controller = [FNhomeVC new];
 	[self.slideoutController addViewControllerToLastSection:controller tagged:2 withTitle:@"地址修改" andIcon:icon2];
     
     controller = [FNhomeVC new];

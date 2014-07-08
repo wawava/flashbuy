@@ -8,6 +8,6 @@
 
 #import "AMSlideTableHeader.h"
 
-@interface CustomHeader : AMSlideTableHeader
+@interface FNCustomHeader : AMSlideTableHeader
 
 @end

@@ -474,7 +474,7 @@
 			self.currentViewController.edgesForExtendedLayout = UIRectEdgeNone;
 		}
 	}
-
+    
 }
 
 - (void)addViewControllerClassToLastSection:(Class)cls
@@ -554,16 +554,16 @@
 {
 	UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
 	[view setBackgroundColor:self.options[AMOptionsBackground]];
-
+    
 	// Table View setup
 	self.tableView = [[AMTableView alloc] initWithFrame:[self tableRect]];
-
+    
 	self.tableView.options = self.options;
 	self.tableView.autoresizingMask = ~UIViewAutoresizingFlexibleBottomMargin;
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	self.tableView.backgroundColor = self.options[AMOptionsBackground];
 	[self.tableView setScrollsToTop:NO];
-        
+    
     self.tableView.contentInset = UIEdgeInsetsMake([self.options[AMOptionsContentInsetTop] floatValue], 0, 0, 0);
     
 	// Dark view
@@ -576,7 +576,7 @@
 	// The content is displayed in a UINavigationController
 	self.contentController = [[self.navigationControllerClass alloc] initWithNavigationBarClass:self.navigationBarClass toolbarClass:self.navigationToolbarClass];
     [self.contentController.view setFrame:view.frame];
-
+    
     self.contentController.navigationBar.translucent = [self.options[AMOptionsNavbarTranslucent] boolValue];
     
 	if ([self.options[AMOptionsEnableShadow] boolValue]) {
@@ -662,14 +662,6 @@
     }
     
     [[[self contentController] navigationBar] setHidden:YES];
-    
-    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setImage:[UIImage imageNamed:@"select"] forState:UIControlStateNormal];
-    [button setFrame:CGRectMake(0, 0, 111/2, 116/2)];
-//    button.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
-    [button addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
-
-    [[self contentController].view addSubview:button];
 }
 
 - (UILabel*)badge
@@ -888,6 +880,13 @@
     
 	[self setContentViewController:newController];
     _currentTag = [dict[kSOViewTag] integerValue];
+    
+    // left category button
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"category"] forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(0, 0, 60, 58)];
+    [button addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
+    [[self contentController].view addSubview:button];
     
 	if ([self.options[AMOptionsUseDefaultTitles] boolValue]) {
 		[newController setTitle:dict[kSOViewTitle]];
