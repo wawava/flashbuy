@@ -8,6 +8,6 @@
 
 #import "FNbaseVC.h"
 
-@interface FNhomeVC : FNbaseVC
+@interface FNHomeVC : FNbaseVC
 
 @end

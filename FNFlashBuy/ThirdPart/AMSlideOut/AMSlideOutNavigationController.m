@@ -9,6 +9,7 @@
 #import "AMSlideOutNavigationController.h"
 #import "AMSlideTableCell.h"
 #import "AMSlideTableHeader.h"
+#import "FNHomeVC.h"
 
 #define SCREEN_WIDTH ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
 #define SCREEN_HEIGHT ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
@@ -881,10 +882,15 @@
 	[self setContentViewController:newController];
     _currentTag = [dict[kSOViewTag] integerValue];
     
-    // left category button
+    // left category or back button
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setImage:[UIImage imageNamed:@"category"] forState:UIControlStateNormal];
-    [button setFrame:CGRectMake(0, 0, 60, 58)];
+    
+    if ([dict[kSOController] isKindOfClass:[FNHomeVC class]])
+        [button setImage:[UIImage imageNamed:@"category"] forState:UIControlStateNormal];
+    else
+        [button setImage:[UIImage imageNamed:@"leftback"] forState:UIControlStateNormal];
+
+    [button setFrame:CGRectMake(-2, 0, 62, 58)];
     [button addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
     [[self contentController].view addSubview:button];
     

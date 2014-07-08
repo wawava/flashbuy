@@ -19,7 +19,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-	UIViewController* controller;
+    
 	[[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.37 green:0.41f blue:0.48f alpha:1.0f]];
 	self.slideoutController = [AMSlideOutNavigationController slideOutNavigation];
     
@@ -50,18 +50,16 @@
 	if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
 		icon2 = @"icon2b.png";
 	}
-    controller = [FNMyOrderVC new];
-	
-	[self.slideoutController addViewControllerToLastSection:controller tagged:1 withTitle:@"我的订单" andIcon:icon1];
 
-    controller = [FNhomeVC new];
-	[self.slideoutController addViewControllerToLastSection:controller tagged:2 withTitle:@"地址修改" andIcon:icon2];
+	[self.slideoutController addViewControllerToLastSection:[FNHomeVC new] tagged:1 withTitle:@"我的首页" andIcon:icon1];
+
+	[self.slideoutController addViewControllerToLastSection:[FNMyOrderVC new] tagged:2 withTitle:@"我的订单" andIcon:icon2];
     
-    controller = [FNhomeVC new];
-	[self.slideoutController addViewControllerToLastSection:controller tagged:3 withTitle:@"关于我们" andIcon:icon2];
+	[self.slideoutController addViewControllerToLastSection:[FNHomeVC new] tagged:3 withTitle:@"地址管理" andIcon:icon2];
     
-    controller = [FNhomeVC new];
-	[self.slideoutController addViewControllerToLastSection:controller tagged:4 withTitle:@"检查更新" andIcon:icon2];
+	[self.slideoutController addViewControllerToLastSection:[FNHomeVC new] tagged:4 withTitle:@"关于我们" andIcon:icon2];
+    
+    [self.slideoutController addViewControllerToLastSection:[FNHomeVC new] tagged:5 withTitle:@"检查更新" andIcon:icon2];
     
 	
 	// Add a second section

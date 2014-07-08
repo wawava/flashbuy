@@ -18,6 +18,9 @@
 		4C06E7BB196BD1AE0021AFC5 /* ordercell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7BA196BD1AE0021AFC5 /* ordercell@2x.png */; };
 		4C06E7BD196BD3C10021AFC5 /* ordertitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7BC196BD3C10021AFC5 /* ordertitle@2x.png */; };
 		4C06E7BF196BD8090021AFC5 /* category@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7BE196BD8090021AFC5 /* category@2x.png */; };
+		4C06E7C3196BDDDF0021AFC5 /* addr_cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7C0196BDDDF0021AFC5 /* addr_cell@2x.png */; };
+		4C06E7C4196BDDDF0021AFC5 /* addr_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7C1196BDDDF0021AFC5 /* addr_title@2x.png */; };
+		4C06E7C5196BDDDF0021AFC5 /* leftback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */; };
 		4C07369A1964F2FE000C0F29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0736991964F2FE000C0F29 /* Foundation.framework */; };
 		4C07369C1964F2FE000C0F29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C07369B1964F2FE000C0F29 /* CoreGraphics.framework */; };
 		4C07369E1964F2FE000C0F29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C07369D1964F2FE000C0F29 /* UIKit.framework */; };
@@ -147,7 +150,7 @@
 		4C073C2419650001000C0F29 /* tableCellRoundBg@2x.png1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0739121964FFFD000C0F29 /* tableCellRoundBg@2x.png1.png */; };
 		4C073C2519650001000C0F29 /* tableCellTopBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0739131964FFFD000C0F29 /* tableCellTopBg@2x.png */; };
 		4C073C2619650001000C0F29 /* tableCellTopBg@2x.png1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0739141964FFFD000C0F29 /* tableCellTopBg@2x.png1.png */; };
-		4C073F2B19650167000C0F29 /* FNhomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F2A19650167000C0F29 /* FNhomeVC.m */; };
+		4C073F2B19650167000C0F29 /* FNHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F2A19650167000C0F29 /* FNHomeVC.m */; };
 		4C073F2E19650FBD000C0F29 /* FNglobalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F2D19650FBD000C0F29 /* FNglobalValue.m */; };
 		4C073F33196680D4000C0F29 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F2F196680D4000C0F29 /* icon1.png */; };
 		4C073F34196680D4000C0F29 /* icon1b.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F30196680D4000C0F29 /* icon1b.png */; };
@@ -206,6 +209,9 @@
 		4C06E7BA196BD1AE0021AFC5 /* ordercell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ordercell@2x.png"; sourceTree = "<group>"; };
 		4C06E7BC196BD3C10021AFC5 /* ordertitle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ordertitle@2x.png"; sourceTree = "<group>"; };
 		4C06E7BE196BD8090021AFC5 /* category@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "category@2x.png"; sourceTree = "<group>"; };
+		4C06E7C0196BDDDF0021AFC5 /* addr_cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addr_cell@2x.png"; sourceTree = "<group>"; };
+		4C06E7C1196BDDDF0021AFC5 /* addr_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addr_title@2x.png"; sourceTree = "<group>"; };
+		4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftback@2x.png"; sourceTree = "<group>"; };
 		4C0736961964F2FE000C0F29 /* FNFlashBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNFlashBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0736991964F2FE000C0F29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C07369B1964F2FE000C0F29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -427,8 +433,8 @@
 		4C0739121964FFFD000C0F29 /* tableCellRoundBg@2x.png1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellRoundBg@2x.png1.png"; sourceTree = "<group>"; };
 		4C0739131964FFFD000C0F29 /* tableCellTopBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellTopBg@2x.png"; sourceTree = "<group>"; };
 		4C0739141964FFFD000C0F29 /* tableCellTopBg@2x.png1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellTopBg@2x.png1.png"; sourceTree = "<group>"; };
-		4C073F2919650167000C0F29 /* FNhomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNhomeVC.h; sourceTree = "<group>"; };
-		4C073F2A19650167000C0F29 /* FNhomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNhomeVC.m; sourceTree = "<group>"; };
+		4C073F2919650167000C0F29 /* FNHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNHomeVC.h; sourceTree = "<group>"; };
+		4C073F2A19650167000C0F29 /* FNHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNHomeVC.m; sourceTree = "<group>"; };
 		4C073F2C19650FBD000C0F29 /* FNglobalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNglobalValue.h; sourceTree = "<group>"; };
 		4C073F2D19650FBD000C0F29 /* FNglobalValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNglobalValue.m; sourceTree = "<group>"; };
 		4C073F2F196680D4000C0F29 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
@@ -1059,8 +1065,8 @@
 				4C0738521964FF47000C0F29 /* FNwebVC.h */,
 				4C0738531964FF47000C0F29 /* FNwebVC.m */,
 				4C0738541964FF47000C0F29 /* SubVCs */,
-				4C073F2919650167000C0F29 /* FNhomeVC.h */,
-				4C073F2A19650167000C0F29 /* FNhomeVC.m */,
+				4C073F2919650167000C0F29 /* FNHomeVC.h */,
+				4C073F2A19650167000C0F29 /* FNHomeVC.m */,
 				4C06E7B7196B9D080021AFC5 /* FNMyOrderVC.h */,
 				4C06E7B8196B9D080021AFC5 /* FNMyOrderVC.m */,
 			);
@@ -1115,6 +1121,9 @@
 		4C0739031964FFFD000C0F29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C06E7C0196BDDDF0021AFC5 /* addr_cell@2x.png */,
+				4C06E7C1196BDDDF0021AFC5 /* addr_title@2x.png */,
+				4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */,
 				4C06E7BE196BD8090021AFC5 /* category@2x.png */,
 				4C06E7BC196BD3C10021AFC5 /* ordertitle@2x.png */,
 				4C06E79C196A84CF0021AFC5 /* profile@2x.png */,
@@ -1256,6 +1265,7 @@
 			files = (
 				4C073F901966CCA8000C0F29 /* leftnavigation@2x.png in Resources */,
 				4C07378D1964FC28000C0F29 /* README.md in Resources */,
+				4C06E7C4196BDDDF0021AFC5 /* addr_title@2x.png in Resources */,
 				4C0737961964FC28000C0F29 /* FontAwesome.ttf in Resources */,
 				4C06E7B6196B8D1E0021AFC5 /* check-in_text-mask@2x.png in Resources */,
 				4C073C1D19650001000C0F29 /* tabbar_normal_background.png in Resources */,
@@ -1266,6 +1276,7 @@
 				4C0737A91964FC28000C0F29 /* README.md in Resources */,
 				4C073C1919650001000C0F29 /* navigationbar_background@2x.png in Resources */,
 				4C073C1C19650001000C0F29 /* set_add_icon.png in Resources */,
+				4C06E7C5196BDDDF0021AFC5 /* leftback@2x.png in Resources */,
 				4C07378C1964FC28000C0F29 /* LICENSE.md in Resources */,
 				4C073F8C1966CB5B000C0F29 /* cell2@2x.png in Resources */,
 				4C07377E1964FC28000C0F29 /* LICENSE in Resources */,
@@ -1291,6 +1302,7 @@
 				4C06E7BB196BD1AE0021AFC5 /* ordercell@2x.png in Resources */,
 				4C073C2219650001000C0F29 /* tableCellMiddleBg@2x.png1.png in Resources */,
 				4C073C2019650001000C0F29 /* tableCellBottomBg@2x.png1.png in Resources */,
+				4C06E7C3196BDDDF0021AFC5 /* addr_cell@2x.png in Resources */,
 				4C073C1F19650001000C0F29 /* tableCellBottomBg@2x.png in Resources */,
 				4C073C2419650001000C0F29 /* tableCellRoundBg@2x.png1.png in Resources */,
 				4C073F36196680D4000C0F29 /* icon2b.png in Resources */,
@@ -1340,7 +1352,7 @@
 				4C0738A61964FF47000C0F29 /* NSNumber+safe.m in Sources */,
 				4C0738DF1964FF47000C0F29 /* FNwebVC.m in Sources */,
 				4C07378E1964FC28000C0F29 /* FLKAutoLayoutPredicateList.m in Sources */,
-				4C073F2B19650167000C0F29 /* FNhomeVC.m in Sources */,
+				4C073F2B19650167000C0F29 /* FNHomeVC.m in Sources */,
 				4C0738A41964FF47000C0F29 /* NSMutableString+safe.m in Sources */,
 				4C0738A31964FF47000C0F29 /* NSMutableDictionary+safe.m in Sources */,
 				4C07377B1964FC28000C0F29 /* AFURLRequestSerialization.m in Sources */,

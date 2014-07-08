@@ -6,19 +6,19 @@
 //  Copyright (c) 2014 com.feiniu. All rights reserved.
 //
 
-#import "FNhomeVC.h"
+#import "FNHomeVC.h"
 #import "FNProductCell.h"
 #import "UIView+LoadFromNib.h"
 #import "NSObject+IOS7UI.h"
 #import "CLPCheckinView.h"
 
-@interface FNhomeVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface FNHomeVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView    * tableview;
 @property (nonatomic, strong) UIImageView    * leftnavigationview;
 @property (nonatomic, strong) CLPCheckinView * checkinView;
 @end
 
-@implementation FNhomeVC
+@implementation FNHomeVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
