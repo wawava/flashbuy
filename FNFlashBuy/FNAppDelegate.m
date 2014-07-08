@@ -9,8 +9,6 @@
 #import "FNAppDelegate.h"
 #import "FNHomeVC.h"
 #import "AMSlideOutNavigationController.h"
-#import "FirstViewController.h"
-#import "SecondViewController.h"
 
 @implementation FNAppDelegate
 
@@ -42,8 +40,6 @@
 	
 	// Add a first section
 	[self.slideoutController addSectionWithTitle:@"FIRST SECTION"];
-	
-	controller = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
 	
 	NSString* icon1 = @"icon1.png";
 	if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {

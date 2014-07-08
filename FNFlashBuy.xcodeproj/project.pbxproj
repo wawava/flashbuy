@@ -924,10 +924,6 @@
 		4C073F4E19668284000C0F29 /* AMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F4919668284000C0F29 /* AMTableView.m */; };
 		4C073F591966859E000C0F29 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F501966859E000C0F29 /* CustomCell.m */; };
 		4C073F5A1966859E000C0F29 /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F521966859E000C0F29 /* CustomHeader.m */; };
-		4C073F5B1966859E000C0F29 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F541966859E000C0F29 /* FirstViewController.m */; };
-		4C073F5C1966859E000C0F29 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F551966859E000C0F29 /* FirstViewController.xib */; };
-		4C073F5D1966859E000C0F29 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F571966859E000C0F29 /* SecondViewController.m */; };
-		4C073F5E1966859E000C0F29 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F581966859E000C0F29 /* SecondViewController.xib */; };
 		4C073F671966C144000C0F29 /* FNProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F661966C144000C0F29 /* FNProductCell.m */; };
 		4C073F7C1966C1D2000C0F29 /* NSMutableArray+AddOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F691966C1D2000C0F29 /* NSMutableArray+AddOn.m */; };
 		4C073F7D1966C1D2000C0F29 /* NSMutableDictionary+AddOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C073F6B1966C1D2000C0F29 /* NSMutableDictionary+AddOn.m */; };
@@ -1970,16 +1966,10 @@
 		4C073F4719668284000C0F29 /* AMSlideTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideTableHeader.m; sourceTree = "<group>"; };
 		4C073F4819668284000C0F29 /* AMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTableView.h; sourceTree = "<group>"; };
 		4C073F4919668284000C0F29 /* AMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTableView.m; sourceTree = "<group>"; };
-		4C073F4F1966859E000C0F29 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
-		4C073F501966859E000C0F29 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
-		4C073F511966859E000C0F29 /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
-		4C073F521966859E000C0F29 /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
-		4C073F531966859E000C0F29 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		4C073F541966859E000C0F29 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		4C073F551966859E000C0F29 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
-		4C073F561966859E000C0F29 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		4C073F571966859E000C0F29 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		4C073F581966859E000C0F29 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		4C073F4F1966859E000C0F29 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ../CustomCell.h; sourceTree = "<group>"; };
+		4C073F501966859E000C0F29 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ../CustomCell.m; sourceTree = "<group>"; };
+		4C073F511966859E000C0F29 /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomHeader.h; path = ../CustomHeader.h; sourceTree = "<group>"; };
+		4C073F521966859E000C0F29 /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomHeader.m; path = ../CustomHeader.m; sourceTree = "<group>"; };
 		4C073F651966C144000C0F29 /* FNProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNProductCell.h; sourceTree = "<group>"; };
 		4C073F661966C144000C0F29 /* FNProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNProductCell.m; sourceTree = "<group>"; };
 		4C073F681966C1D2000C0F29 /* NSMutableArray+AddOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+AddOn.h"; sourceTree = "<group>"; };
@@ -2540,16 +2530,6 @@
 		4C07384C1964FF47000C0F29 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4C073F4F1966859E000C0F29 /* CustomCell.h */,
-				4C073F501966859E000C0F29 /* CustomCell.m */,
-				4C073F511966859E000C0F29 /* CustomHeader.h */,
-				4C073F521966859E000C0F29 /* CustomHeader.m */,
-				4C073F531966859E000C0F29 /* FirstViewController.h */,
-				4C073F541966859E000C0F29 /* FirstViewController.m */,
-				4C073F551966859E000C0F29 /* FirstViewController.xib */,
-				4C073F561966859E000C0F29 /* SecondViewController.h */,
-				4C073F571966859E000C0F29 /* SecondViewController.m */,
-				4C073F581966859E000C0F29 /* SecondViewController.xib */,
 				4C07384D1964FF47000C0F29 /* Base */,
 				4C0738501964FF47000C0F29 /* FNtextFieldCell.h */,
 				4C0738511964FF47000C0F29 /* FNtextFieldCell.m */,
@@ -2574,6 +2554,10 @@
 		4C0738541964FF47000C0F29 /* SubVCs */ = {
 			isa = PBXGroup;
 			children = (
+				4C073F4F1966859E000C0F29 /* CustomCell.h */,
+				4C073F501966859E000C0F29 /* CustomCell.m */,
+				4C073F511966859E000C0F29 /* CustomHeader.h */,
+				4C073F521966859E000C0F29 /* CustomHeader.m */,
 			);
 			path = SubVCs;
 			sourceTree = "<group>";
@@ -3578,7 +3562,6 @@
 				4C073E1F19650001000C0F29 /* icon_mine_level3user@2x.png in Resources */,
 				4C073F1F19650001000C0F29 /* ump_btn_sms_normal.png in Resources */,
 				4C073C3119650001000C0F29 /* bg_common.png in Resources */,
-				4C073F5C1966859E000C0F29 /* FirstViewController.xib in Resources */,
 				4C073E4519650001000C0F29 /* icon_movieTicketRedemptionMachine.png in Resources */,
 				4C073CA319650001000C0F29 /* bg_search_field@2x.png in Resources */,
 				4C073E0719650001000C0F29 /* icon_merchant_phone@2x.png in Resources */,
@@ -3846,7 +3829,6 @@
 				4C073C5319650001000C0F29 /* bg_homepage_hotTopicCell.png in Resources */,
 				4C073C4919650001000C0F29 /* bg_feedback_receive@2x.png in Resources */,
 				4C073DBF19650001000C0F29 /* icon_homepage_haircutCategory.png in Resources */,
-				4C073F5E1966859E000C0F29 /* SecondViewController.xib in Resources */,
 				4C073C4B19650001000C0F29 /* bg_feedback_send@2x.png in Resources */,
 				4C073C8A19650001000C0F29 /* bg_navigationBar@2x.png in Resources */,
 				4C073D8419650001000C0F29 /* icon_deal_hotelBreakfast@2x.png in Resources */,
@@ -4405,7 +4387,6 @@
 				4C0737931964FC28000C0F29 /* FAImageView.m in Sources */,
 				4C0737A01964FC28000C0F29 /* PPiFlatSegmentedControl.m in Sources */,
 				4C0737791964FC28000C0F29 /* AFSecurityPolicy.m in Sources */,
-				4C073F5D1966859E000C0F29 /* SecondViewController.m in Sources */,
 				4C073F4E19668284000C0F29 /* AMTableView.m in Sources */,
 				4C073F7D1966C1D2000C0F29 /* NSMutableDictionary+AddOn.m in Sources */,
 				4C073F2E19650FBD000C0F29 /* FNglobalValue.m in Sources */,
@@ -4450,7 +4431,6 @@
 				4C0737C11964FC28000C0F29 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				4C0737AB1964FC28000C0F29 /* SDImageCache.m in Sources */,
 				4C0737781964FC28000C0F29 /* AFNetworkReachabilityManager.m in Sources */,
-				4C073F5B1966859E000C0F29 /* FirstViewController.m in Sources */,
 				4C0738D91964FF47000C0F29 /* FNfontLibrary.m in Sources */,
 				4C0738AF1964FF47000C0F29 /* UIView+Effect.m in Sources */,
 				4C0738A01964FF47000C0F29 /* NSArray+safe.m in Sources */,
