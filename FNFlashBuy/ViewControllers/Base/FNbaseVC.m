@@ -39,6 +39,7 @@
     if (self.navigationController.viewControllers.count > 1 && self == self.navigationController.topViewController) {
         [self installBackArrowToNavibar];
     }
+    
 }
 
 

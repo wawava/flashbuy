@@ -67,20 +67,20 @@
     
 	
 	// Add a second section
-//	[self.slideoutController addSectionWithTitle:@"SECOND SECTION"];
+    //	[self.slideoutController addSectionWithTitle:@"SECOND SECTION"];
     
 	// Add two viewcontrollers to the second section (with lazy initialization)
     
-//	[self.slideoutController addViewControllerClassToLastSection:[FirstViewController class]
-//                                                     withNibName:@"FirstViewController"
-//                                                          tagged:3
-//                                                       withTitle:@"First View"
-//                                                         andIcon:[UIImage imageNamed:icon1]
-//                                                    beforeChange:^{
-//                                                        NSLog(@"Changing viewController");
-//                                                    } onCompletition:^{
-//                                                        NSLog(@"Done");
-//                                                    }];
+    //	[self.slideoutController addViewControllerClassToLastSection:[FirstViewController class]
+    //                                                     withNibName:@"FirstViewController"
+    //                                                          tagged:3
+    //                                                       withTitle:@"First View"
+    //                                                         andIcon:[UIImage imageNamed:icon1]
+    //                                                    beforeChange:^{
+    //                                                        NSLog(@"Changing viewController");
+    //                                                    } onCompletition:^{
+    //                                                        NSLog(@"Done");
+    //                                                    }];
 	
     //	[self.slideoutController addViewControllerClassToLastSection:[FNhomeVC class] withNibName:@"FNhomeVC" tagged:4 withTitle:@"Second View" andIcon:icon2];
     
@@ -88,22 +88,12 @@
     //	[self.slideoutController addSectionWithTitle:@"" andHeaderClassName:@"CustomHeader" withHeight:5];
     
 	
-//	[self.slideoutController addActionToLastSection:^{} // Some action
-//											 tagged:5
-//										  withTitle:@"Action"
-//											andIcon:@""];
+    //	[self.slideoutController addActionToLastSection:^{} // Some action
+    //											 tagged:5
+    //										  withTitle:@"Action"
+    //											andIcon:@""];
 	
 	[self.window setRootViewController:self.slideoutController];
-    
-    /*
-    if ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0) {
-        [application setStatusBarStyle:UIStatusBarStyleLightContent];
-        CGRect frame = self.window.frame;
-        frame.origin.y += 20.0f;
-        frame.size.height -= 20.0f;
-        self.window.frame = frame;
-    }
-     */
     
     [self.window makeKeyAndVisible];
 	
@@ -112,6 +102,15 @@
     [FNutil findFonts];
     
     //    [TDAPIEngineTest run]；
+    
+    if ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0) {
+        [application setStatusBarStyle:UIStatusBarStyleLightContent];
+        self.window.clipsToBounds =YES;
+        CGRect frame = self.window.frame;
+        frame.origin.y += 20.0f;
+        frame.size.height -= 20.0f;
+        self.window.frame = frame;
+    }
     
     return YES;
 }
