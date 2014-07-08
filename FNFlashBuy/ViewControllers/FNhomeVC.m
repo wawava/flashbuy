@@ -58,6 +58,16 @@
     _leftnavigationview = [UIImageView new];
     [_leftnavigationview setFrame:CGRectMake(0, 0, 117/2, 778/2)];
     [_leftnavigationview setImage:[UIImage imageNamed:@"leftnavigation"]];
+    
+    
+    _leftnavigationview.layer.shadowColor = [UIColor blackColor].CGColor;
+    
+    _leftnavigationview.layer.shadowOffset = CGSizeMake(0, 0);
+    
+    _leftnavigationview.layer.shadowOpacity = 0.5;
+    
+    _leftnavigationview.alpha = 0.7;
+    
     [self.view addSubview:_leftnavigationview];
     
 }

@@ -32,7 +32,7 @@
 //	self.titleLabel.shadowOffset = CGSizeMake(0, 1);
 //    self.titleLabel.frame = CGRectMake([self.options[AMOptionsHeaderPadding] floatValue], 0, [self.options[AMOptionsSlideValue] floatValue] - [self.options[AMOptionsHeaderPadding] floatValue], self.bounds.size.height);
     UIImage* imageabcd= [UIImage imageNamed:@"profile"];
-    [self .titleImageview setFrame:CGRectMake(0, 0, 270, 135)];
+    [self .titleImageview setFrame:CGRectMake(0, 0, 250, 135)];
     [self.titleImageview setImage:imageabcd];
 }
 
