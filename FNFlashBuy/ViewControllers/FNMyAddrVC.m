@@ -51,7 +51,7 @@
 
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -59,9 +59,17 @@
     if (cell == nil)
     {
         cell = [FNProductCell new];
-        UIImageView * imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"addr_cell"]];
-        [imageview setCenter:CGPointMake(160, 40)];
-        [cell addSubview:imageview];
+        if (indexPath.row != 3) {
+            UIImageView * imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"addr_cell"]];
+            [imageview setCenter:CGPointMake(160, 40)];
+            [cell addSubview:imageview];
+        }
+        else
+        {
+            UIImageView * imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"add_addr"]];
+            [imageview setCenter:CGPointMake(160, 40)];
+            [cell addSubview:imageview];
+        }
     }
     
     return cell;

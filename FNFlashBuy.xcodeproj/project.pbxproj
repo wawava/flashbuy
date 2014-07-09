@@ -183,6 +183,8 @@
 		4C073F8D1966CB5B000C0F29 /* cell3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F8A1966CB5B000C0F29 /* cell3@2x.png */; };
 		4C073F901966CCA8000C0F29 /* leftnavigation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C073F8E1966CCA8000C0F29 /* leftnavigation@2x.png */; };
 		4C81AA53196A68C600BF9557 /* NSObject+IOS7UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C81AA52196A68C600BF9557 /* NSObject+IOS7UI.m */; };
+		4CA31AC3196CF00800E624A4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC1196CF00800E624A4 /* Icon.png */; };
+		4CA31AC4196CF00800E624A4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC2196CF00800E624A4 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -487,6 +489,8 @@
 		4C073F8E1966CCA8000C0F29 /* leftnavigation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftnavigation@2x.png"; sourceTree = "<group>"; };
 		4C81AA51196A68C600BF9557 /* NSObject+IOS7UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IOS7UI.h"; sourceTree = "<group>"; };
 		4C81AA52196A68C600BF9557 /* NSObject+IOS7UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IOS7UI.m"; sourceTree = "<group>"; };
+		4CA31AC1196CF00800E624A4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = FNFlashBuy/Icon.png; sourceTree = "<group>"; };
+		4CA31AC2196CF00800E624A4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "FNFlashBuy/Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -556,6 +560,8 @@
 		4C07368D1964F2FE000C0F29 = {
 			isa = PBXGroup;
 			children = (
+				4CA31AC1196CF00800E624A4 /* Icon.png */,
+				4CA31AC2196CF00800E624A4 /* Icon@2x.png */,
 				4C07369F1964F2FE000C0F29 /* FNFlashBuy */,
 				4C0736C41964F2FE000C0F29 /* FNFlashBuyTests */,
 				4C0736981964F2FE000C0F29 /* Frameworks */,
@@ -1320,11 +1326,13 @@
 				4C07379E1964FC28000C0F29 /* LICENSE in Resources */,
 				4C073F8D1966CB5B000C0F29 /* cell3@2x.png in Resources */,
 				4C07379B1964FC28000C0F29 /* README.mdown in Resources */,
+				4CA31AC4196CF00800E624A4 /* Icon@2x.png in Resources */,
 				4C073C1B19650001000C0F29 /* navigationbar_background_tall@2x.png in Resources */,
 				4C073F8B1966CB5B000C0F29 /* cell1@2x.png in Resources */,
 				4C073F3E19668147000C0F29 /* iconSlideBlack@2x.png in Resources */,
 				4C07379F1964FC28000C0F29 /* README.md in Resources */,
 				4C073F33196680D4000C0F29 /* icon1.png in Resources */,
+				4CA31AC3196CF00800E624A4 /* Icon.png in Resources */,
 				4C0737921964FC28000C0F29 /* README.md in Resources */,
 				4C06E7B4196B8D1E0021AFC5 /* check-in_groove@2x.png in Resources */,
 				4C073C1819650001000C0F29 /* navigationbar_background.png in Resources */,
