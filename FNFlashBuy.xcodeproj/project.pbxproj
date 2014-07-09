@@ -21,6 +21,8 @@
 		4C06E7C3196BDDDF0021AFC5 /* addr_cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7C0196BDDDF0021AFC5 /* addr_cell@2x.png */; };
 		4C06E7C4196BDDDF0021AFC5 /* addr_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7C1196BDDDF0021AFC5 /* addr_title@2x.png */; };
 		4C06E7C5196BDDDF0021AFC5 /* leftback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */; };
+		4C06E7C8196BF1210021AFC5 /* FNMyAddrVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C06E7C7196BF1210021AFC5 /* FNMyAddrVC.m */; };
+		4C06E7CA196BF37E0021AFC5 /* add_addr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C06E7C9196BF37E0021AFC5 /* add_addr@2x.png */; };
 		4C07369A1964F2FE000C0F29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0736991964F2FE000C0F29 /* Foundation.framework */; };
 		4C07369C1964F2FE000C0F29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C07369B1964F2FE000C0F29 /* CoreGraphics.framework */; };
 		4C07369E1964F2FE000C0F29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C07369D1964F2FE000C0F29 /* UIKit.framework */; };
@@ -212,6 +214,9 @@
 		4C06E7C0196BDDDF0021AFC5 /* addr_cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addr_cell@2x.png"; sourceTree = "<group>"; };
 		4C06E7C1196BDDDF0021AFC5 /* addr_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addr_title@2x.png"; sourceTree = "<group>"; };
 		4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftback@2x.png"; sourceTree = "<group>"; };
+		4C06E7C6196BF1210021AFC5 /* FNMyAddrVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNMyAddrVC.h; sourceTree = "<group>"; };
+		4C06E7C7196BF1210021AFC5 /* FNMyAddrVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNMyAddrVC.m; sourceTree = "<group>"; };
+		4C06E7C9196BF37E0021AFC5 /* add_addr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_addr@2x.png"; sourceTree = "<group>"; };
 		4C0736961964F2FE000C0F29 /* FNFlashBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FNFlashBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0736991964F2FE000C0F29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C07369B1964F2FE000C0F29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1069,6 +1074,8 @@
 				4C073F2A19650167000C0F29 /* FNHomeVC.m */,
 				4C06E7B7196B9D080021AFC5 /* FNMyOrderVC.h */,
 				4C06E7B8196B9D080021AFC5 /* FNMyOrderVC.m */,
+				4C06E7C6196BF1210021AFC5 /* FNMyAddrVC.h */,
+				4C06E7C7196BF1210021AFC5 /* FNMyAddrVC.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1121,6 +1128,7 @@
 		4C0739031964FFFD000C0F29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C06E7C9196BF37E0021AFC5 /* add_addr@2x.png */,
 				4C06E7C0196BDDDF0021AFC5 /* addr_cell@2x.png */,
 				4C06E7C1196BDDDF0021AFC5 /* addr_title@2x.png */,
 				4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */,
@@ -1266,6 +1274,7 @@
 				4C073F901966CCA8000C0F29 /* leftnavigation@2x.png in Resources */,
 				4C07378D1964FC28000C0F29 /* README.md in Resources */,
 				4C06E7C4196BDDDF0021AFC5 /* addr_title@2x.png in Resources */,
+				4C06E7CA196BF37E0021AFC5 /* add_addr@2x.png in Resources */,
 				4C0737961964FC28000C0F29 /* FontAwesome.ttf in Resources */,
 				4C06E7B6196B8D1E0021AFC5 /* check-in_text-mask@2x.png in Resources */,
 				4C073C1D19650001000C0F29 /* tabbar_normal_background.png in Resources */,
@@ -1387,6 +1396,7 @@
 				4C0737A01964FC28000C0F29 /* PPiFlatSegmentedControl.m in Sources */,
 				4C0737791964FC28000C0F29 /* AFSecurityPolicy.m in Sources */,
 				4C073F4E19668284000C0F29 /* AMTableView.m in Sources */,
+				4C06E7C8196BF1210021AFC5 /* FNMyAddrVC.m in Sources */,
 				4C06E7A4196B8CA60021AFC5 /* CAKeyframeAnimation+AHEasing.m in Sources */,
 				4C073F7D1966C1D2000C0F29 /* NSMutableDictionary+AddOn.m in Sources */,
 				4C073F2E19650FBD000C0F29 /* FNglobalValue.m in Sources */,

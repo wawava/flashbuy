@@ -652,7 +652,7 @@
 	// Select the first view controller
 	if (self.startingControllerTag < 0) {
 		[self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
-		[self tableView:self.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+		[self tableView:self.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 	} else {
 		[self switchToControllerTagged:(int)self.startingControllerTag andPerformSelector:nil withObject:nil];
 	}

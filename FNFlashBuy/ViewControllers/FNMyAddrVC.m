@@ -1,19 +1,20 @@
 //
-//  FNMyOrderVC.m
+//  FNMyAddrVC.m
 //  FNFlashBuy
 //
 //  Created by towne on 7/8/14.
 //  Copyright (c) 2014 com.feiniu. All rights reserved.
 //
 
-#import "FNMyOrderVC.h"
+#import "FNMyAddrVC.h"
 #import "FNProductCell.h"
 
-@interface FNMyOrderVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface FNMyAddrVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView    * tableview;
+
 @end
 
-@implementation FNMyOrderVC
+@implementation FNMyAddrVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,13 +45,13 @@
     
     UIImageView * title = [UIImageView new];
     [title setFrame:CGRectMake(60, 0, 320-60, 57)];
-    [title setImage:[UIImage imageNamed:@"ordertitle"]];
+    [title setImage:[UIImage imageNamed:@"addr_title"]];
     [self.view addSubview:title];
 }
 
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 15;
+    return 3;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,7 +59,7 @@
     if (cell == nil)
     {
         cell = [FNProductCell new];
-        UIImageView * imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ordercell"]];
+        UIImageView * imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"addr_cell"]];
         [imageview setCenter:CGPointMake(160, 40)];
         [cell addSubview:imageview];
     }
