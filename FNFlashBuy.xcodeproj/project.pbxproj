@@ -185,6 +185,10 @@
 		4C81AA53196A68C600BF9557 /* NSObject+IOS7UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C81AA52196A68C600BF9557 /* NSObject+IOS7UI.m */; };
 		4CA31AC3196CF00800E624A4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC1196CF00800E624A4 /* Icon.png */; };
 		4CA31AC4196CF00800E624A4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC2196CF00800E624A4 /* Icon@2x.png */; };
+		4CA31AC9196D27F500E624A4 /* Member2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC5196D27F500E624A4 /* Member2_1.png */; };
+		4CA31ACA196D27F500E624A4 /* Member2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC6196D27F500E624A4 /* Member2_2.png */; };
+		4CA31ACB196D27F500E624A4 /* Member2_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC7196D27F500E624A4 /* Member2_3.png */; };
+		4CA31ACC196D27F500E624A4 /* Member2_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC8196D27F500E624A4 /* Member2_4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -491,6 +495,10 @@
 		4C81AA52196A68C600BF9557 /* NSObject+IOS7UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IOS7UI.m"; sourceTree = "<group>"; };
 		4CA31AC1196CF00800E624A4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = FNFlashBuy/Icon.png; sourceTree = "<group>"; };
 		4CA31AC2196CF00800E624A4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "FNFlashBuy/Icon@2x.png"; sourceTree = "<group>"; };
+		4CA31AC5196D27F500E624A4 /* Member2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Member2_1.png; sourceTree = "<group>"; };
+		4CA31AC6196D27F500E624A4 /* Member2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Member2_2.png; sourceTree = "<group>"; };
+		4CA31AC7196D27F500E624A4 /* Member2_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Member2_3.png; sourceTree = "<group>"; };
+		4CA31AC8196D27F500E624A4 /* Member2_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Member2_4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1140,6 +1148,10 @@
 				4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */,
 				4C06E7BE196BD8090021AFC5 /* category@2x.png */,
 				4C06E7BC196BD3C10021AFC5 /* ordertitle@2x.png */,
+				4CA31AC5196D27F500E624A4 /* Member2_1.png */,
+				4CA31AC6196D27F500E624A4 /* Member2_2.png */,
+				4CA31AC7196D27F500E624A4 /* Member2_3.png */,
+				4CA31AC8196D27F500E624A4 /* Member2_4.png */,
 				4C06E79C196A84CF0021AFC5 /* profile@2x.png */,
 				4C06E7BA196BD1AE0021AFC5 /* ordercell@2x.png */,
 				4C073F8E1966CCA8000C0F29 /* leftnavigation@2x.png */,
@@ -1282,6 +1294,7 @@
 				4C06E7C4196BDDDF0021AFC5 /* addr_title@2x.png in Resources */,
 				4C06E7CA196BF37E0021AFC5 /* add_addr@2x.png in Resources */,
 				4C0737961964FC28000C0F29 /* FontAwesome.ttf in Resources */,
+				4CA31ACB196D27F500E624A4 /* Member2_3.png in Resources */,
 				4C06E7B6196B8D1E0021AFC5 /* check-in_text-mask@2x.png in Resources */,
 				4C073C1D19650001000C0F29 /* tabbar_normal_background.png in Resources */,
 				4C07379C1964FC28000C0F29 /* fontawesome-webfont.ttf in Resources */,
@@ -1310,6 +1323,7 @@
 				4C073C2319650001000C0F29 /* tableCellRoundBg@2x.png in Resources */,
 				4C073F3D19668147000C0F29 /* iconSlideBlack.png in Resources */,
 				4C0737A11964FC28000C0F29 /* LICENSE in Resources */,
+				4CA31ACC196D27F500E624A4 /* Member2_4.png in Resources */,
 				4C06E7BF196BD8090021AFC5 /* category@2x.png in Resources */,
 				4C073F3C19668147000C0F29 /* iconSlide@2x.png in Resources */,
 				4C0737A21964FC28000C0F29 /* README.md in Resources */,
@@ -1322,6 +1336,7 @@
 				4C073C2419650001000C0F29 /* tableCellRoundBg@2x.png1.png in Resources */,
 				4C073F36196680D4000C0F29 /* icon2b.png in Resources */,
 				4C0737A71964FC28000C0F29 /* README.md in Resources */,
+				4CA31AC9196D27F500E624A4 /* Member2_1.png in Resources */,
 				4C0737A81964FC28000C0F29 /* LICENSE in Resources */,
 				4C07379E1964FC28000C0F29 /* LICENSE in Resources */,
 				4C073F8D1966CB5B000C0F29 /* cell3@2x.png in Resources */,
@@ -1330,6 +1345,7 @@
 				4C073C1B19650001000C0F29 /* navigationbar_background_tall@2x.png in Resources */,
 				4C073F8B1966CB5B000C0F29 /* cell1@2x.png in Resources */,
 				4C073F3E19668147000C0F29 /* iconSlideBlack@2x.png in Resources */,
+				4CA31ACA196D27F500E624A4 /* Member2_2.png in Resources */,
 				4C07379F1964FC28000C0F29 /* README.md in Resources */,
 				4C073F33196680D4000C0F29 /* icon1.png in Resources */,
 				4CA31AC3196CF00800E624A4 /* Icon.png in Resources */,
@@ -1589,6 +1605,7 @@
 				GCC_PREFIX_HEADER = "FNFlashBuy/FNFlashBuy-Prefix.pch";
 				INFOPLIST_FILE = "FNFlashBuy/FNFlashBuy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1602,6 +1619,7 @@
 				GCC_PREFIX_HEADER = "FNFlashBuy/FNFlashBuy-Prefix.pch";
 				INFOPLIST_FILE = "FNFlashBuy/FNFlashBuy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
