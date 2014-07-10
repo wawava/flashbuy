@@ -8,6 +8,7 @@
 
 #import "FNMyAddrVC.h"
 #import "FNProductCell.h"
+#import "FNAddrEditVC.h"
 
 @interface FNMyAddrVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView    * tableview;
@@ -81,6 +82,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@">>>>>>>>>>>>>>>>>>>>>>>>>>");
+    if (indexPath.row ==3) {
+        [self.navigationController pushViewController:[FNAddrEditVC new] animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning

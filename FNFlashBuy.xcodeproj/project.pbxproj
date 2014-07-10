@@ -189,6 +189,8 @@
 		4CA31ACA196D27F500E624A4 /* Member2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC6196D27F500E624A4 /* Member2_2.png */; };
 		4CA31ACB196D27F500E624A4 /* Member2_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC7196D27F500E624A4 /* Member2_3.png */; };
 		4CA31ACC196D27F500E624A4 /* Member2_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AC8196D27F500E624A4 /* Member2_4.png */; };
+		4CA31ACF196D39BE00E624A4 /* FNAddrEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA31ACE196D39BE00E624A4 /* FNAddrEditVC.m */; };
+		4CA31AD1196D3B0200E624A4 /* addr_edit_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA31AD0196D3B0200E624A4 /* addr_edit_title@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -499,6 +501,9 @@
 		4CA31AC6196D27F500E624A4 /* Member2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Member2_2.png; sourceTree = "<group>"; };
 		4CA31AC7196D27F500E624A4 /* Member2_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Member2_3.png; sourceTree = "<group>"; };
 		4CA31AC8196D27F500E624A4 /* Member2_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Member2_4.png; sourceTree = "<group>"; };
+		4CA31ACD196D39BE00E624A4 /* FNAddrEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNAddrEditVC.h; sourceTree = "<group>"; };
+		4CA31ACE196D39BE00E624A4 /* FNAddrEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNAddrEditVC.m; sourceTree = "<group>"; };
+		4CA31AD0196D3B0200E624A4 /* addr_edit_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addr_edit_title@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1090,6 +1095,8 @@
 				4C06E7B8196B9D080021AFC5 /* FNMyOrderVC.m */,
 				4C06E7C6196BF1210021AFC5 /* FNMyAddrVC.h */,
 				4C06E7C7196BF1210021AFC5 /* FNMyAddrVC.m */,
+				4CA31ACD196D39BE00E624A4 /* FNAddrEditVC.h */,
+				4CA31ACE196D39BE00E624A4 /* FNAddrEditVC.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1144,6 +1151,7 @@
 			children = (
 				4C06E7C9196BF37E0021AFC5 /* add_addr@2x.png */,
 				4C06E7C0196BDDDF0021AFC5 /* addr_cell@2x.png */,
+				4CA31AD0196D3B0200E624A4 /* addr_edit_title@2x.png */,
 				4C06E7C1196BDDDF0021AFC5 /* addr_title@2x.png */,
 				4C06E7C2196BDDDF0021AFC5 /* leftback@2x.png */,
 				4C06E7BE196BD8090021AFC5 /* category@2x.png */,
@@ -1344,6 +1352,7 @@
 				4CA31AC4196CF00800E624A4 /* Icon@2x.png in Resources */,
 				4C073C1B19650001000C0F29 /* navigationbar_background_tall@2x.png in Resources */,
 				4C073F8B1966CB5B000C0F29 /* cell1@2x.png in Resources */,
+				4CA31AD1196D3B0200E624A4 /* addr_edit_title@2x.png in Resources */,
 				4C073F3E19668147000C0F29 /* iconSlideBlack@2x.png in Resources */,
 				4CA31ACA196D27F500E624A4 /* Member2_2.png in Resources */,
 				4C07379F1964FC28000C0F29 /* README.md in Resources */,
@@ -1378,6 +1387,7 @@
 				4C073F671966C144000C0F29 /* FNProductCell.m in Sources */,
 				4C073F851966C1D2000C0F29 /* UIView+LoadFromNib.m in Sources */,
 				4C06E7A9196B8CDD0021AFC5 /* CLPCheckinView.m in Sources */,
+				4CA31ACF196D39BE00E624A4 /* FNAddrEditVC.m in Sources */,
 				4C073F821966C1D2000C0F29 /* UINavigationController+Autorotate.m in Sources */,
 				4C0738AD1964FF47000C0F29 /* Toast+UIView.m in Sources */,
 				4C0737941964FC28000C0F29 /* NSString+FontAwesome.m in Sources */,

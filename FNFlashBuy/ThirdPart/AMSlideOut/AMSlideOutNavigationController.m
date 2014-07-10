@@ -10,6 +10,8 @@
 #import "AMSlideTableCell.h"
 #import "AMSlideTableHeader.h"
 #import "FNHomeVC.h"
+#import "FNMyOrderVC.h"
+#import "FNMyAddrVC.h"
 
 #define SCREEN_WIDTH ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
 #define SCREEN_HEIGHT ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
@@ -26,6 +28,7 @@
 @property (strong, nonatomic)	UILabel                 *badge;
 @property (assign, nonatomic)   BOOL                    menuVisible;
 @property (assign, nonatomic)   BOOL                    viewHasBeenShownOnce;
+@property (strong, nonatomic)   UIButton                * lbutton;//左上角按钮
 
 @end
 
@@ -883,16 +886,21 @@
     _currentTag = [dict[kSOViewTag] integerValue];
     
     // left category or back button
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.lbutton = [UIButton buttonWithType:UIButtonTypeCustom];
     
     if ([dict[kSOController] isKindOfClass:[FNHomeVC class]])
-        [button setImage:[UIImage imageNamed:@"category"] forState:UIControlStateNormal];
+        [_lbutton setImage:[UIImage imageNamed:@"category"] forState:UIControlStateNormal];
     else
-        [button setImage:[UIImage imageNamed:@"leftback"] forState:UIControlStateNormal];
+        [_lbutton setImage:[UIImage imageNamed:@"leftback"] forState:UIControlStateNormal];
 
-    [button setFrame:CGRectMake(-2, 0, 62, 58)];
-    [button addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
-    [[self contentController].view addSubview:button];
+    [_lbutton setFrame:CGRectMake(-2, 0, 62, 58)];
+    [_lbutton addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
+    
+    if ([dict[kSOController] isKindOfClass:[FNHomeVC class]]||
+        [dict[kSOController] isKindOfClass:[FNMyOrderVC class]]||
+        [dict[kSOController] isKindOfClass:[FNMyAddrVC class]]) {
+        [[self contentController].view addSubview:_lbutton];
+    }
     
 	if ([self.options[AMOptionsUseDefaultTitles] boolValue]) {
 		[newController setTitle:dict[kSOViewTitle]];
